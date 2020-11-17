@@ -1,0 +1,12 @@
+<h1>Score</h1>
+
+<p><%= params[:answer] %></p>
+<p><%= params[:letters].split %></p>
+
+<%= run_game(params[:answer], params[:letters].split) %>
+<br>
+<br>
+<%= session[:score] %>
+<br>
+<br>
+<%= link_to 'Play again!', 'new' %>
